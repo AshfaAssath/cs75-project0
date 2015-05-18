@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<menu>
+    <categories version="1">
+        <category name="Pizzas">
+            <items>
+                <item name="Tomato & Cheese">
+                    <sizes>
+                        <size size="small">
+                            <price>5.50</price>
+                        </size>
+                        <size size="large">
+                            <price>9.75</price>
+                        </size>
+                    </sizes>
+                </item>
+                <item name="Onions">
+                    <sizes>
+                        <size size="small">
+                            <price>6.85</price>
+                        </size>
+                        <size size="large">
+                            <price>10.85</price>
+                        </size>
+                    </sizes>
+                </item>
+                <item name="Peppers">
+                    <sizes>
+                        <size size="small">
+                            <price>6.85</price>
+                        </size>
+                        <size size="large">
+                            <price>10.85</price>
+                        </size>
+                    </sizes>
+                </item>
+                <item name="Brocoli">
+                    <sizes>
+                        <size name="small">
+                            <price>6.85</price>
+                        </size>
+                        <size name="large">
+                            <price>10.85</price>
+                        </size>
+                    </sizes>
+                </item>
+                <item name="Fresh Gaelic">
+                    <sizes>
+                        <size size="small">
+                            <price>6.85</price>
+                        </size>
+                        <size size="large">
+                            <price>10.85</price>
+                        </size>
+                    </sizes>
+                </item>
+                <item name="Extra Cheese">
+                    <sizes>
+                        <size size="small">
+                            <price>1.25</price>
+                        </size>
+                        <size size="large">
+                            <price>1.85</price>
+                        </size>
+                    </sizes>
+                </item>
+            </items>
+        </category>
+        
+        <category name="Speciality Pizzas">
+            <items>
+                <item name="Three Aces Special">
+                    <sizes>
+                        <size size="small">
+                            <price>9.80</price>
+                        </size>
+                        <size size="large">
+                            <price>15.80</price>
+                        </size>
+                    </sizes>
+                    <description></description>
+                </item>
+                <item name="Mediterranean">
+                    <sizes>
+                        <size size="small">
+                            <price>9.80</price>
+                        </size>
+                        <size size="large">
+                            <price>15.80</price>
+                        </size>
+                    </sizes>
+                    <description>Sliced Tomatoes, Olives, Spinach, Fresh   Garlic, Mozzarella & Feta Cheese</description>
+                </item>
+                <item name="Vegetarian">
+                    <sizes>
+                        <size name="small">
+                            <price>9.80</price>
+                        </size>
+                        <size name="large">
+                            <price>15.80</price>
+                        </size>
+                    </sizes>
+                    <description>Sliced Tomatoes, Onion, Peppers, Mushrooms, Broccoli, Mozzarella</description>
+                </item>
+            </items>
+        </category>
+        
+        <category name="Spcial Dinners">
+            <items>
+                <item name="Chicken Wing Dinner">
+                    <price>7.25</price>
+                </item>
+                <item name="Gyro Plate">
+                    <price>7.25</price>
+                </item>
+                <item name="Chicken Finger Plate">
+                    <price>7.25</price>
+                </item>
+                <item name="3 Piece Chicken Dinner">
+                    <price>7.25</price>
+                </item>
+                <item name="Cheeseburger or Chicken Burger Plate">
+                    <price>5.25</price>
+                </item>
+            </items>
+        </category>
+        
+        <category name="Side Orders">
+            <items>
+                <item name="Onion Rings">
+                    <sizes>
+                        <size size="small">
+                            <price>2.60</price>
+                        </size>
+                        <size name="large">
+                            <price>2.95</price>
+                        </size>
+                    </sizes>
+                </item>
+                <item name="French">
+                    <sizes>
+                        <size size="small">
+                            <price>2.25</price>
+                        </size>
+                        <size size="large">
+                            <price>2.65</price>
+                        </size>
+                    </sizes>
+                </item>
+                <item name="Spicy">
+                    <sizes>
+                        <size size="small">
+                            <price>2.60</price>
+                        </size>
+                        <size size="large">
+                            <price>2.95</price>
+                        </size>
+                    </sizes>
+                </item>
+                <item name="Chicken Wings">
+                    <price>5.75</price>
+                </item>
+                <item name="Buffalo Wings">
+                    <price>5.75</price>
+                </item>
+            </items>
+        </category>
+        
+        <category name="Salads">
+            <items>
+                <item name="Garden">
+                    <sizes>
+                        <size size="small">
+                            <price>3.50</price>
+                        </size>
+                        <size size="large">
+                            <price>4.50</price>
+                        </size>
+                    </sizes>
+                </item>
+                <item name="Greek">
+                    <sizes>
+                        <size size="small">
+                            <price>4.50</price>
+                        </size>
+                        <size size="large">
+                            <price>5.50</price>
+                        </size>
+                    </sizes>
+                </item>
+                <item name="Antipasto">
+                    <sizes>
+                        <size size="small">
+                            <price>4.50</price>
+                        </size>
+                        <size size="large">
+                            <price>5.50</price>
+                        </size>
+                    </sizes>
+                </item>
+                <item name="Chef">
+                    <sizes>
+                        <size size="small">
+                            <price>4.50</price>
+                        </size>
+                        <size size="large">
+                            <price>5.50</price>
+                        </size>
+                    </sizes>
+                </item>
+                <item name="Tuna">
+                    <sizes>
+                        <size size="small">
+                            <price>4.50</price>
+                        </size>
+                        <size size="large">
+                            <price>5.50</price>
+                        </size>
+                    </sizes>
+                </item>
+            </items>
+        </category>
+        
+        <category name="Spaghetti or Ziti">
+            <items>
+                <item name"With Sauce">
+                    <price>5.45</price>
+                </item>
+                <item name"With Sausage">
+                    <price>6.45</price>
+                </item>
+                <item name"With Meatball">
+                    <price>6.45</price>
+                </item>
+                <item name"With Veal">
+                    <price>6.45</price>
+                </item>
+                <item name"A La Three Aces">
+                    <price>6.45</price>
+                    <description>Sausage, Mushrooms, Bacon & Ham Topped with Sauce & Mozzarella Cheese</description>
+                </item>
+            </items>
+        </category>
+        
+        <category name="Home made Lasagna Raviolo or Manicotti">
+            <items>
+                <item name"With Sauce">
+                    <price>6.25</price>
+                </item>
+                <item name"With Sausage">
+                    <price>7.25</price>
+                </item>
+                <item name"With Meatball">
+                    <price>7.25</price>
+                </item>
+                <item name"With Veal">
+                    <price>7.25</price>
+                </item>
+                <item name"Veggie Lasagna">
+                    <price>7.25</price>
+                    <description>All Pasta Dinners Served with Garlic Bread and Salad</description>
+                </item>
+            </items>
+        </category>
+        
+    </categories>
+</menu>
