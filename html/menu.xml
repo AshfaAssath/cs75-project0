@@ -262,5 +262,206 @@
             </items>
         </category>
         
+        <category namr="Homemade calzones" size="large">
+            <items>
+                <item name="vegetarian">
+                    <price>7.35</price>
+                </item>
+                <item name="Sausage">
+                    <price>7.35</price>
+                </item>
+                <item name="Ham & Cheese">
+                    <price>7.35</price>
+                </item>
+                <item name="Chicken Cutlet">
+                    <price>7.35</price>
+                </item>
+                <item name="Grilled Chicken">
+                    <price>7.35</price>
+                </item>
+                <item name="Italian">
+                    <price>7.35</price>
+                    <description>All the above come with mushrooms, peppers&onions</description>
+                </item>
+            </items>
+        </category>
+        
+        <category name="Wraps">
+            <items>
+                <item name="Turkey Clue Wrap">
+                    <price>4.95</price>
+                    <description>Turkey, Cheese, Lettuce, Tomato,Onion, Mayo</description>
+                </item>
+                <item name="Chicken Cobb">
+                    <price>4.95</price>
+                    <description>Grilled Chicken, Bacon, Cheese, lettuce,Tomatop, Onion, Honey Mustard</description>
+                </item>
+                <item name="Greek Supreme">
+                    <price>4.95</price>
+                    <description>Feta Cheese, Black Olives, Lettuce,Tomato, Onion, Greek Dressing</description>
+                </item>
+            </items>
+        </category>
+        
+        <category name="Grinders">
+            <items>
+                <item name="Meatless">
+                    <sizes>
+                        <size size="small">
+                            <price>4.50</price>
+                        </size>
+                        <size size="large">
+                            <price>4.95</price>
+                        </size>
+                    </sizes>
+                </item>
+                <item name="Hamburger">
+                    <sizes>
+                        <size size="small">
+                            <price>4.50</price>
+                        </size>
+                        <size size="large">
+                            <price>4.95</price>
+                        </size>
+                    </sizes>
+                </item>
+                <item name="Cheeseburger">
+                    <sizes>
+                        <size size="small">
+                            <price>4.75</price>
+                        </size>
+                        <size size="large">
+                            <price>5.75</price>
+                        </size>
+                    </sizes>
+                </item>
+                <item name="Meatball">
+                    <sizes>
+                        <size size="small">
+                            <price>4.75</price>
+                        </size>
+                        <size size="large">
+                            <price>5.75</price>
+                        </size>
+                    </sizes>
+                </item>
+                <item name="Sausage">
+                    <sizes>
+                        <size size="small">
+                            <price>4.75</price>
+                        </size>
+                        <size size="large">
+                            <price>5.75</price>
+                        </size>
+                    </sizes>
+                </item>
+                <item name="American">
+                    <sizes>
+                        <size size="small">
+                            <price>4.75</price>
+                        </size>
+                        <size size="large">
+                            <price>5.75</price>
+                        </size>
+                    </sizes>
+                </item>
+                <item name="Veal Curlet">
+                    <sizes>
+                        <size size="small">
+                            <price>4.75</price>
+                        </size>
+                        <size size="large">
+                            <price>5.75</price>
+                        </size>
+                    </sizes>
+                </item>
+                <item name="Hot Pastrami">
+                    <sizes>
+                        <size size="small">
+                            <price>4.95</price>
+                        </size>
+                        <size size="large">
+                            <price>5.95</price>
+                        </size>
+                    </sizes>
+                </item>
+                <item name="Italian">
+                    <sizes>
+                        <size size="small">
+                            <price>4.75</price>
+                        </size>
+                        <size size="large">
+                            <price>5.75</price>
+                        </size>
+                    </sizes>
+                </item>
+                <item name="Genoa Salami">
+                    <sizes>
+                        <size size="small">
+                            <price>4.75</price>
+                        </size>
+                        <size size="large">
+                            <price>5.75</price>
+                        </size>
+                    </sizes>
+                </item>
+                <item name="Ham">
+                    <sizes>
+                        <size size="small">
+                            <price>4.75</price>
+                        </size>
+                        <size size="large">
+                            <price>5.75</price>
+                        </size>
+                    </sizes>
+                </item>
+                <item name="Pepper & Egg">
+                    <sizes>
+                        <size size="small">
+                            <price>4.50</price>
+                        </size>
+                        <size size="large">
+                            <price>4.95</price>
+                        </size>
+                    </sizes>
+                </item>
+                <item name="Gyro On Pita">
+                    <price>5.50</price>
+                </item>
+                <item name="Grilled Chicken On Pizzas">
+                    <price>5.25</price>
+                </item>
+                <item name="Grilled Chicken Delight">
+                    <sizes>
+                        <size size="small">
+                            <price>5.50</price>
+                        </size>
+                        <size size="large">
+                            <price>6.50</price>
+                        </size>
+                    </sizes>
+                </item>
+                <item name="Grilled Chicken Sub">
+                    <sizes>
+                        <size size="small">
+                            <price>5.25</price>
+                        </size>
+                        <size size="large">
+                            <price>5.85</price>
+                        </size>
+                    </sizes>
+                </item>
+                <item name="Chicken Finger Sub">
+                    <sizes>
+                        <size size="small">
+                            <price>4.60</price>
+                        </size>
+                        <size size="large">
+                            <price>5.60</price>
+                        </size>
+                    </sizes>
+                </item>
+            </items>
+        </category>
     </categories>
 </menu>
