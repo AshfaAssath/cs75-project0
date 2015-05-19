@@ -3,7 +3,7 @@
     <categories version="1">
         <category name="Pizzas">
             <items>
-                <item name="Tomato & Cheese">
+                <item name="Tomato &amp; Cheese">
                     <sizes>
                         <size size="small">
                             <price>5.50</price>
@@ -88,7 +88,7 @@
                             <price>15.80</price>
                         </size>
                     </sizes>
-                    <description>Sliced Tomatoes, Olives, Spinach, Fresh   Garlic, Mozzarella & Feta Cheese</description>
+                    <description>Sliced Tomatoes, Olives, Spinach, Fresh   Garlic, Mozzarella &amp;amp; Feta Cheese</description>
                 </item>
                 <item name="Vegetarian">
                     <sizes>
@@ -131,7 +131,7 @@
                         <size size="small">
                             <price>2.60</price>
                         </size>
-                        <size name="large">
+                        <size size="large">
                             <price>2.95</price>
                         </size>
                     </sizes>
@@ -222,47 +222,47 @@
         
         <category name="Spaghetti or Ziti">
             <items>
-                <item name"With Sauce">
+                <item name="With Sauce">
                     <price>5.45</price>
                 </item>
-                <item name"With Sausage">
+                <item name="With Sausage">
                     <price>6.45</price>
                 </item>
-                <item name"With Meatball">
+                <item name="With Meatball">
                     <price>6.45</price>
                 </item>
-                <item name"With Veal">
+                <item name="With Veal">
                     <price>6.45</price>
                 </item>
-                <item name"A La Three Aces">
+                <item name="A La Three Aces">
                     <price>6.45</price>
-                    <description>Sausage, Mushrooms, Bacon & Ham Topped with Sauce & Mozzarella Cheese</description>
+                    <description>Sausage, Mushrooms, Bacon &amp; Ham Topped with Sauce &amp; Mozzarella Cheese</description>
                 </item>
             </items>
         </category>
         
         <category name="Home made Lasagna Raviolo or Manicotti">
             <items>
-                <item name"With Sauce">
+                <item name="With Sauce">
                     <price>6.25</price>
                 </item>
-                <item name"With Sausage">
+                <item name="With Sausage">
                     <price>7.25</price>
                 </item>
-                <item name"With Meatball">
+                <item name="With Meatball">
                     <price>7.25</price>
                 </item>
-                <item name"With Veal">
+                <item name="With Veal">
                     <price>7.25</price>
                 </item>
-                <item name"Veggie Lasagna">
+                <item nam="Veggie Lasagna">
                     <price>7.25</price>
                     <description>All Pasta Dinners Served with Garlic Bread and Salad</description>
                 </item>
             </items>
         </category>
         
-        <category namr="Homemade calzones" size="large">
+        <category name="Homemade calzones" size="large">
             <items>
                 <item name="vegetarian">
                     <price>7.35</price>
@@ -270,7 +270,7 @@
                 <item name="Sausage">
                     <price>7.35</price>
                 </item>
-                <item name="Ham & Cheese">
+                <item name="Ham &amp; Cheese">
                     <price>7.35</price>
                 </item>
                 <item name="Chicken Cutlet">
@@ -281,7 +281,7 @@
                 </item>
                 <item name="Italian">
                     <price>7.35</price>
-                    <description>All the above come with mushrooms, peppers&onions</description>
+                    <description>All the above come with mushrooms, peppers&amp;onions</description>
                 </item>
             </items>
         </category>
@@ -415,7 +415,7 @@
                         </size>
                     </sizes>
                 </item>
-                <item name="Pepper & Egg">
+                <item name="Pepper &amp; Egg">
                     <sizes>
                         <size size="small">
                             <price>4.50</price>
