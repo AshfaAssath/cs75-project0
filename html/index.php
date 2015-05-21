@@ -18,6 +18,11 @@
             h3{
                 margin:0px;
             }
+            a{
+                color:white;
+                text-decoration:none;
+                
+            }
             /*设置背景颜色*/
             .wrapper{
                 background-color:#f5f5f5;
@@ -79,11 +84,11 @@
             }
             .item-left2{
                 
+            
                 line-height:70px;
             }
             .sizes{
-                /*padding:11px 16px;*/
-               /* float:left;*/
+                    
             }
             .size{
                 padding:1.2px;
@@ -94,15 +99,51 @@
                 position:absolute;
                 left:60px;
                 font-size:15px;
+                width:140px;
+                /*font:15px Arial,Helvetica,sans-serif;*/
                
             }
+            
+            .icon{
+                display:inline-block;
+                position:absolute;
+                left:80px;
+                top:21%;
+                background-color:#fe4d3d;
+                float:right;
+                margin-right:50px;
+                /*margin-top:10px;*/
+                height:17px;
+                width:17px;
+                /*border:1px solid black;*/
+                line-height:17px;
+                text-align:center;
+            }
+            
+            .icon2{
+                display:inline-block;
+                position:absolute;
+                left:80px;
+                top:37%;
+                background-color:#fe4d3d;
+                float:right;
+                margin-right:50px;
+                /*margin-top:10px;*/
+                height:17px;
+                width:17px;
+                /*border:1px solid black;*/
+                line-height:17px;
+                text-align:center;
+            }
+
+           
             .description{
                 
                 font-size:10px;
                 font-style:italic;
                 position:absolute;
                 left:50px;
-                bottom:10px;
+                bottom:3px;
             }
         </style>
     </head>
@@ -152,8 +193,12 @@
                                             print $size[size];
                                             print "<span class=\"price\">";
                                             print "$"."{$size->price}";
+                                            print "<div class=\"icon\">";
+                                            print "<a href=\"#\" class=\"add-icon\">+</a>";
+                                            print "</div>";
                                             print "<span>";
-                 
+                                            
+
                                             print "</div>";
                                         }
                                         print "</div>";
@@ -167,8 +212,11 @@
                                         print "<div class=\"item-left2\">";
                                         print "<span class=\"price\">";
                                         print "$"."{$size->price}";
-                 
+                                        print "<div class=\"icon2\">";
+                                        print "<a href=\"#\" class=\"add-icon\">+</a>";
+                                        print "</div>";
                                         print "</span>";
+                        
                                         print "</div>";
                                     }
                                     print "</div>";  
