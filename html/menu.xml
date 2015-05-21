@@ -35,10 +35,10 @@
                 </item>
                 <item name="Brocoli">
                     <sizes>
-                        <size name="small">
+                        <size size="small">
                             <price>6.85</price>
                         </size>
-                        <size name="large">
+                        <size size="large">
                             <price>10.85</price>
                         </size>
                     </sizes>
@@ -92,10 +92,10 @@
                 </item>
                 <item name="Vegetarian">
                     <sizes>
-                        <size name="small">
+                        <size size="small">
                             <price>9.80</price>
                         </size>
-                        <size name="large">
+                        <size size="large">
                             <price>15.80</price>
                         </size>
                     </sizes>
@@ -255,7 +255,7 @@
                 <item name="With Veal">
                     <price>7.25</price>
                 </item>
-                <item nam="Veggie Lasagna">
+                <item name="Veggie Lasagna">
                     <price>7.25</price>
                     <description>All Pasta Dinners Served with Garlic Bread and Salad</description>
                 </item>
