@@ -3,7 +3,7 @@
     <categories version="1">
         <category name="Pizzas">
             <items>
-                <item name="Tomato &amp; Cheese">
+                <item name="Tomato &amp; Cheese" id="1">
                     <sizes>
                         <size size="small">
                             <price>5.50</price>
