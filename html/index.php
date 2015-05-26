@@ -246,12 +246,40 @@
             }
         </style>
         <script type="text/javascript" >
+        
+            var cart_json = {"food":[]};
+            
             var shopCart = new function(){
                     this.cart_show = 0;
                     
                     this.total = 0;
                     
                     this.add = function(o){
+                        var json_exit = false;
+                        for(var i=0;i<cart_json.food.length;i++)
+                        {
+                            if(cart_json.food[i].id==o.id){
+                                if(o.size && cart_json.food[i].size==o.size){
+                                    cart_json.food[i].num=(parseInt(cart_json.food[i].num)+1).toString();
+                                    json_exit = true;
+                                }
+                            }
+                        }
+                        if(json_exit == false){
+                            if(o.size){
+                            item_json = { "id":o.id,"size":o.size, "num":1};
+                            cart_json.food.push(item_json);
+                                                        
+                            }
+                            else{
+                            item_json = { "id":o.id, "num":1};
+                            cart_json.food.push(item_json);
+                            }
+                                
+                        }
+                        var cart_value_str = JSON.stringify(cart_json);
+                        var cart_value = document.getElementById("items-list-checkout");
+                        cart_value.setAttribute("value",cart_value_str);
                         
                         this.cart_show+=1;
                         this.total = (parseFloat(this.total)+parseFloat(o.price)).toFixed(2);
@@ -304,6 +332,26 @@
                     }
                 
                     this.remove = function(o){
+                        
+                        var json_exit = false;
+                        for(var i=0;i<cart_json.food.length;i++)
+                        {
+                            if(cart_json.food[i].id==o.id){
+                                if(o.size && cart_json.food[i].size==o.size){
+                                    if((parseInt(cart_json.food[i].num)-1)==0){
+                                        cart_json.food.splice(i,1);
+                                    }
+                                    else{
+                                    cart_json.food[i].num=(parseInt(cart_json.food[i].num)-1).toString();
+                                    }
+                                }
+                            }
+                        }
+                        var cart_value_str = JSON.stringify(cart_json);
+                        var cart_value = document.getElementById("items-list-checkout");
+                        cart_value.setAttribute("value",cart_value_str);
+                        
+                    
                         
                         this.cart_show-=1;
                         this.total = (parseFloat(this.total)-parseFloat(o.price)).toFixed(2);
@@ -474,7 +522,7 @@
                 </div>
                 <form method=post action="checkout.php">
                     <input class="go-pay" type="submit" value="Checkout"/>
-                    <input id="items-list" type="hidden" name="items-list"/>
+                    <input id="items-list-checkout" type="hidden" name="items-list-checkout" value="ee"/>
                 </form>
             </div>
         </div>

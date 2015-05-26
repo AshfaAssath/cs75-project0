@@ -23,7 +23,7 @@
                         </size>
                     </sizes>
                 </item>
-                <item name="Peppers">
+                <item name="Peppers" id="3">
                     <sizes>
                         <size size="small">
                             <price>6.85</price>
@@ -33,7 +33,7 @@
                         </size>
                     </sizes>
                 </item>
-                <item name="Brocoli">
+                <item name="Brocoli" id="4">     
                     <sizes>
                         <size size="small">
                             <price>6.85</price>
@@ -43,7 +43,7 @@
                         </size>
                     </sizes>
                 </item>
-                <item name="Fresh Gaelic">
+                <item name="Fresh Gaelic" id="5">
                     <sizes>
                         <size size="small">
                             <price>6.85</price>
@@ -53,7 +53,7 @@
                         </size>
                     </sizes>
                 </item>
-                <item name="Extra Cheese">
+                <item name="Extra Cheese" id="6">
                     <sizes>
                         <size size="small">
                             <price>1.25</price>
@@ -68,7 +68,7 @@
         
         <category name="Speciality Pizzas">
             <items>
-                <item name="Three Aces Special">
+                <item name="Three Aces Special" id="7">
                     <sizes>
                         <size size="small">
                             <price>9.80</price>
@@ -79,7 +79,7 @@
                     </sizes>
                     <description></description>
                 </item>
-                <item name="Mediterranean">
+                <item name="Mediterranean" id="8">
                     <sizes>
                         <size size="small">
                             <price>9.80</price>
@@ -90,7 +90,7 @@
                     </sizes>
                     <description>Sliced Tomatoes, Olives, Spinach, Fresh   Garlic, Mozzarella &amp;amp; Feta Cheese</description>
                 </item>
-                <item name="Vegetarian">
+                <item name="Vegetarian" id="9">
                     <sizes>
                         <size size="small">
                             <price>9.80</price>
@@ -106,19 +106,19 @@
         
         <category name="Spcial Dinners">
             <items>
-                <item name="Chicken Wing Dinner" id="5">
+                <item name="Chicken Wing Dinner" id="10">
                     <price>7.25</price>
                 </item>
-                <item name="Gyro Plate">
+                <item name="Gyro Plate" id="11">
                     <price>7.25</price>
                 </item>
-                <item name="Chicken Finger Plate">
+                <item name="Chicken Finger Plate" id="12">
                     <price>7.25</price>
                 </item>
-                <item name="3 Piece Chicken Dinner">
+                <item name="3 Piece Chicken Dinner" id="13">
                     <price>7.25</price>
                 </item>
-                <item name="Cheeseburger or Chicken Burger Plate">
+                <item name="Cheeseburger or Chicken Burger Plate" id="14">
                     <price>5.25</price>
                 </item>
             </items>
@@ -126,7 +126,7 @@
         
         <category name="Side Orders">
             <items>
-                <item name="Onion Rings">
+                <item name="Onion Rings" id="15">
                     <sizes>
                         <size size="small">
                             <price>2.60</price>
@@ -136,7 +136,7 @@
                         </size>
                     </sizes>
                 </item>
-                <item name="French">
+                <item name="French" id="16">
                     <sizes>
                         <size size="small">
                             <price>2.25</price>
@@ -146,7 +146,7 @@
                         </size>
                     </sizes>
                 </item>
-                <item name="Spicy">
+                <item name="Spicy" id="17">
                     <sizes>
                         <size size="small">
                             <price>2.60</price>
@@ -156,10 +156,10 @@
                         </size>
                     </sizes>
                 </item>
-                <item name="Chicken Wings">
+                <item name="Chicken Wings" id="18">
                     <price>5.75</price>
                 </item>
-                <item name="Buffalo Wings">
+                <item name="Buffalo Wings" id="19">
                     <price>5.75</price>
                 </item>
             </items>
@@ -167,7 +167,7 @@
         
         <category name="Salads">
             <items>
-                <item name="Garden">
+                <item name="Garden" id="20">
                     <sizes>
                         <size size="small">
                             <price>3.50</price>
@@ -177,7 +177,7 @@
                         </size>
                     </sizes>
                 </item>
-                <item name="Greek">
+                <item name="Greek" id="21">
                     <sizes>
                         <size size="small">
                             <price>4.50</price>
@@ -187,7 +187,7 @@
                         </size>
                     </sizes>
                 </item>
-                <item name="Antipasto">
+                <item name="Antipasto" id="22">
                     <sizes>
                         <size size="small">
                             <price>4.50</price>
@@ -197,7 +197,7 @@
                         </size>
                     </sizes>
                 </item>
-                <item name="Chef">
+                <item name="Chef" id="23">
                     <sizes>
                         <size size="small">
                             <price>4.50</price>
@@ -207,7 +207,7 @@
                         </size>
                     </sizes>
                 </item>
-                <item name="Tuna">
+                <item name="Tuna" id="24">
                     <sizes>
                         <size size="small">
                             <price>4.50</price>
@@ -222,19 +222,19 @@
         
         <category name="Spaghetti or Ziti">
             <items>
-                <item name="With Sauce">
+                <item name="With Sauce" id="25">
                     <price>5.45</price>
                 </item>
-                <item name="With Sausage">
+                <item name="With Sausage" id="26">
                     <price>6.45</price>
                 </item>
-                <item name="With Meatball">
+                <item name="With Meatball" id="27">
                     <price>6.45</price>
                 </item>
-                <item name="With Veal">
+                <item name="With Veal" id="28">
                     <price>6.45</price>
                 </item>
-                <item name="A La Three Aces">
+                <item name="A La Three Aces" id="29">
                     <price>6.45</price>
                     <description>Sausage, Mushrooms, Bacon &amp; Ham Topped with Sauce &amp; Mozzarella Cheese</description>
                 </item>
@@ -243,19 +243,19 @@
         
         <category name="Home made Lasagna Raviolo or Manicotti">
             <items>
-                <item name="With Sauce">
+                <item name="With Sauce" id="30">
                     <price>6.25</price>
                 </item>
-                <item name="With Sausage">
+                <item name="With Sausage" id="31">
                     <price>7.25</price>
                 </item>
-                <item name="With Meatball">
+                <item name="With Meatball" id="32">
                     <price>7.25</price>
                 </item>
-                <item name="With Veal">
+                <item name="With Veal" id="33">
                     <price>7.25</price>
                 </item>
-                <item name="Veggie Lasagna">
+                <item name="Veggie Lasagna" id="34">
                     <price>7.25</price>
                     <description>All Pasta Dinners Served with Garlic Bread and Salad</description>
                 </item>
@@ -264,22 +264,22 @@
         
         <category name="Homemade calzones" size="large">
             <items>
-                <item name="vegetarian">
+                <item name="vegetarian" id="35">
                     <price>7.35</price>
                 </item>
-                <item name="Sausage">
+                <item name="Sausage" id="36">
                     <price>7.35</price>
                 </item>
-                <item name="Ham &amp; Cheese">
+                <item name="Ham &amp; Cheese" id="37">
                     <price>7.35</price>
                 </item>
-                <item name="Chicken Cutlet">
+                <item name="Chicken Cutlet" id="38">
                     <price>7.35</price>
                 </item>
-                <item name="Grilled Chicken">
+                <item name="Grilled Chicken" id="39">
                     <price>7.35</price>
                 </item>
-                <item name="Italian">
+                <item name="Italian" id="40">
                     <price>7.35</price>
                     <description>All the above come with mushrooms, peppers&amp;onions</description>
                 </item>
@@ -288,15 +288,15 @@
         
         <category name="Wraps">
             <items>
-                <item name="Turkey Clue Wrap">
+                <item name="Turkey Clue Wrap" id="41">
                     <price>4.95</price>
                     <description>Turkey, Cheese, Lettuce, Tomato,Onion, Mayo</description>
                 </item>
-                <item name="Chicken Cobb">
+                <item name="Chicken Cobb" id="42">
                     <price>4.95</price>
                     <description>Grilled Chicken, Bacon, Cheese, lettuce,Tomatop, Onion, Honey Mustard</description>
                 </item>
-                <item name="Greek Supreme">
+                <item name="Greek Supreme" id="43">
                     <price>4.95</price>
                     <description>Feta Cheese, Black Olives, Lettuce,Tomato, Onion, Greek Dressing</description>
                 </item>
@@ -305,7 +305,7 @@
         
         <category name="Grinders">
             <items>
-                <item name="Meatless">
+                <item name="Meatless" id="44">
                     <sizes>
                         <size size="small">
                             <price>4.50</price>
@@ -315,7 +315,7 @@
                         </size>
                     </sizes>
                 </item>
-                <item name="Hamburger">
+                <item name="Hamburger" id="45">
                     <sizes>
                         <size size="small">
                             <price>4.50</price>
@@ -325,7 +325,7 @@
                         </size>
                     </sizes>
                 </item>
-                <item name="Cheeseburger">
+                <item name="Cheeseburger" id="46">
                     <sizes>
                         <size size="small">
                             <price>4.75</price>
@@ -335,7 +335,7 @@
                         </size>
                     </sizes>
                 </item>
-                <item name="Meatball">
+                <item name="Meatball" id="47">
                     <sizes>
                         <size size="small">
                             <price>4.75</price>
@@ -345,7 +345,7 @@
                         </size>
                     </sizes>
                 </item>
-                <item name="Sausage">
+                <item name="Sausage" id="48">
                     <sizes>
                         <size size="small">
                             <price>4.75</price>
@@ -355,7 +355,7 @@
                         </size>
                     </sizes>
                 </item>
-                <item name="American">
+                <item name="American" id="49">
                     <sizes>
                         <size size="small">
                             <price>4.75</price>
@@ -365,7 +365,7 @@
                         </size>
                     </sizes>
                 </item>
-                <item name="Veal Curlet">
+                <item name="Veal Curlet" id="50">
                     <sizes>
                         <size size="small">
                             <price>4.75</price>
@@ -375,7 +375,7 @@
                         </size>
                     </sizes>
                 </item>
-                <item name="Hot Pastrami">
+                <item name="Hot Pastrami" id="51">
                     <sizes>
                         <size size="small">
                             <price>4.95</price>
@@ -385,7 +385,7 @@
                         </size>
                     </sizes>
                 </item>
-                <item name="Italian">
+                <item name="Italian" id="52">
                     <sizes>
                         <size size="small">
                             <price>4.75</price>
@@ -395,7 +395,7 @@
                         </size>
                     </sizes>
                 </item>
-                <item name="Genoa Salami">
+                <item name="Genoa Salami" id="53">
                     <sizes>
                         <size size="small">
                             <price>4.75</price>
@@ -405,7 +405,7 @@
                         </size>
                     </sizes>
                 </item>
-                <item name="Ham">
+                <item name="Ham" id="54">
                     <sizes>
                         <size size="small">
                             <price>4.75</price>
@@ -415,7 +415,7 @@
                         </size>
                     </sizes>
                 </item>
-                <item name="Pepper &amp; Egg">
+                <item name="Pepper &amp; Egg" id="55">
                     <sizes>
                         <size size="small">
                             <price>4.50</price>
@@ -428,10 +428,10 @@
                 <item name="Gyro On Pita">
                     <price>5.50</price>
                 </item>
-                <item name="Grilled Chicken On Pizzas">
+                <item name="Grilled Chicken On Pizzas" id="56">
                     <price>5.25</price>
                 </item>
-                <item name="Grilled Chicken Delight">
+                <item name="Grilled Chicken Delight" id="57">
                     <sizes>
                         <size size="small">
                             <price>5.50</price>
@@ -441,7 +441,7 @@
                         </size>
                     </sizes>
                 </item>
-                <item name="Grilled Chicken Sub">
+                <item name="Grilled Chicken Sub" id="58">
                     <sizes>
                         <size size="small">
                             <price>5.25</price>
@@ -451,7 +451,7 @@
                         </size>
                     </sizes>
                 </item>
-                <item name="Chicken Finger Sub">
+                <item name="Chicken Finger Sub" id="59">
                     <sizes>
                         <size size="small">
                             <price>4.60</price>
