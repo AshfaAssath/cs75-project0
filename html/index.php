@@ -35,6 +35,7 @@
 /*                display:none;*/
                 padding:10px 10px;
             }
+            span
             /*设置背景颜色*/
             .wrapper{
                 background-color:#f5f5f5;
@@ -159,12 +160,15 @@
                 bottom:3px;
             }
             
-            .shopping-cart{
+            #shopping-cart{
                 background-color:#ffffff;
                 position:fixed;
                 bottom:0;
                 left:50%;
                 margin-left:315px;
+            }
+            #cart-items-list{
+                /*display:none;*/
             }
             .items-list-name{
                 color:#333333;
@@ -172,18 +176,20 @@
                 font-size:18px;
             }
             .small-font{
-                padding:3px 0px;
+                padding:3px 0px 15px;
                 font-size:15px;
             }
             .items-list-size{
                 font-style:italic;
-                margin-left:105px;
+                position:absolute;
+                left:75px;
             }
             .items-list-quantity{
-                margin-left:17px;
+                position:absolute;
+                left:133px;
                 display:inline-block;
             }
-            #substract,#add{
+            .substract,.add{
                 display:inline-block;
                 text-align:center;
                 width:13px;
@@ -194,7 +200,11 @@
                 cursor:pointer;
 
             }
-            .border-line{
+            .item-cart-num{
+                display:inline-block;
+                padding:0 5px;
+            }
+            .cart-item{
                 border-bottom:1px solid #bbbbbb; 
             }
             .top-line{
@@ -202,16 +212,17 @@
             }
             .items-list-price{
                 color:#fe4d3d;
-                margin-left:15px;
+                position:absolute;
+                left:211px;
             }
-            .checkout-box{
+            #checkout-box{
                 background-color:#333333;
                 width:280px;
                 height:45px;
             }
             .price-count{
                 position:absolute;
-                left:32px;
+                left:42px;
                 bottom:7px;
                 font-size:20px;
                 font-size:26px;
@@ -236,11 +247,100 @@
         </style>
         <script type="text/javascript" >
             var shopCart = new function(){
+                    this.cart_show = 0;
                     
+                    this.total = 0;
                     
                     this.add = function(o){
+                        
+                        this.cart_show+=1;
+                        this.total = (parseFloat(this.total)+parseFloat(o.price)).toFixed(2);
+                        
+                        var total_cost = document.getElementById("total");
+                        total_cost.innerHTML = "$"+this.total;
+                        
+                        var items_list = document.getElementById("cart-items-list");
+                        
+                        /*if(this.cart_show>0){
+                            items_list.style.display = "block";
+                        }*/
+                        
+                        
+                        if(o.size){
+                            var id = o.id+((o.size=="small")?"A":"B");
+                            var items_num = document.getElementById("id_cart_num_"+id);
+                            var items_price = document.getElementById("id-cart-price-"+id);
+                        }
+                        else{
+                            var items_num = document.getElementById("id_cart_num_"+o.id);
+                            var items_price = document.getElementById("id-cart-price-"+o.id);
+                        }
+                        
+                        if(items_num){
+                            
+                                var price = (o.price*(parseInt(items_num.innerHTML)+1)).toFixed(2);
+                                items_num.innerHTML=parseInt(items_num.innerHTML)+1;
+                                items_price.innerHTML="$"+price;
+                                
+                        }
+                        else{
+                            var cart_item = document.createElement("li");
+                            cart_item.className="cart-item";
+                            if(o.size){
+                                var size = (o.size=="small")?"Sm":"Lg";
+                                var id = o.id+((o.size=="small")?"A":"B");
+                                cart_item.id = "id_cart_item_"+id;
+                                var detail = "{id:'"+o.id+"',item:'"+o.item+"',size:'"+o.size+"',price:'"+o.price+"'}";
+                                cart_item.innerHTML = '<div class="items-list-name">'+o.item+'</div><div class="small-font"><span class="items-list-size">'+size+'</span><div class="items-list-quantity"><span class="substract" onClick="shopCart.remove('+detail+')">-</span><span class="item-cart-num" id="id_cart_num_'+id+'">1</span><span class="add" onClick="shopCart.add('+detail+')">+</span></div><span class="items-list-price" id="id-cart-price-'+id+'">$'+o.price+'</span></div>';
+                                items_list.appendChild(cart_item);
+                            }
+                            else{
+                                cart_item.id = "id_cart_item_"+o.id;
+                                var detail = "{id:'"+o.id+"',item:'"+o.item+"',price:'"+o.price+"'}";
+                                cart_item.innerHTML = '<div class="items-list-name">'+o.item+'</div><div class="small-font"><div class="items-list-quantity"><span class="substract" onClick="shopCart.remove('+detail+')">-</span><span class="item-cart-num" id="id_cart_num_'+o.id+'">1</span><span class="add" onClick="shopCart.add('+detail+')">+</span></div><span class="items-list-price" id="id-cart-price-'+o.id+'">$'+o.price+'</span></div>';
+                                items_list.appendChild(cart_item);
+                            }
+                        }
+                    }
+                
+                    this.remove = function(o){
+                        
+                        this.cart_show-=1;
+                        this.total = (parseFloat(this.total)-parseFloat(o.price)).toFixed(2);
                     
-                }
+                        var total_cost = document.getElementById("total");
+                        total_cost.innerHTML = "$"+this.total;
+                        
+                        var items_list = document.getElementById("cart-items-list");
+                        
+                        /*if(this.cart_show<=0){
+                            items_list.style.display = "none";    
+                        }*/
+                        
+                        if(o.size){
+                            var id = o.id+((o.size=="small")?"A":"B");
+                            var items_num = document.getElementById("id_cart_num_"+id);
+                            var items_price = document.getElementById("id-cart-price-"+id);
+                        }
+                        else{
+                            var id = o.id;
+                            var items_num = document.getElementById("id_cart_num_"+id);
+                            var items_price = document.getElementById("id-cart-price-"+id);
+                        }
+                        
+                        if(((parseInt(items_num.innerHTML))>1)){
+                            
+                                var price = (o.price*(parseInt(items_num.innerHTML)-1)).toFixed(2);
+                                items_num.innerHTML=parseInt(items_num.innerHTML)-1;
+                                items_price.innerHTML="$"+price;
+                                    
+                        }
+                        else{
+                            var cart_item = document.getElementById("id_cart_item_"+id);
+                            items_list.removeChild(cart_item);
+                       }
+                        
+                    }
             }
         </script>
     </head>
@@ -313,7 +413,7 @@
                                         print "<span class=\"price\">";
                                         print "$"."{$size->price}";
                                         print "<div class=\"icon2\">";
-                                        $item_detail="id:\'$item[id]',item:'$item[name]',price:'$size->price'}";
+                                        $item_detail="{id:'$item[id]',item:'$item[name]',price:'$size->price'}";
                                         print "<a onClick=\"shopCart.add($item_detail)\" class=\"add-icon\">+</a>";
                                         print "</div>";
                                         print "</span>";
@@ -348,52 +448,29 @@
             </div>
         </div>
         
-        <div class="shopping-cart">
-            <div class="items-list">
-                <ul class="top-line">
-                    <li class="border-line">
+        <div id="shopping-cart">
+            <div>
+                <ul class="top-line" id="cart-items-list">
+                   <!-- <li class="cart-item" id="id_cart_item_1">
                         <div class="items-list-name">3 Piece Chicken Dinner</div>
                         <div class="small-font">
-                            <span class="items-list-size">Sm</span>
+                            <span class="items-list-size" id="id-cart-size-1">Sm</span>
                             <div class="items-list-quantity">
-                                <span id="substract">-</span>
-                                <span id="number">2</span>
-                                <span id="add">+</span>
+                                <span class="substract">-</span>
+                                <span class="item-cart-num" id="id_cart_num_1">2</span>
+                                <span class="add" onClick="shopCart.add()">+</span>
                             </div>
-                            <span class="items-list-price">$10.00</span>
+                            <span class="items-list-price" id="id-cart-price-1">$10.00</span>
                         </div>
-                    </li>
-                    <li class="border-line">
-                        <div class="items-list-name">Tomato & Cheese</div>
-                        <div class="small-font">
-                            <span class="items-list-size">Lg</span>
-                            <div class="items-list-quantity">
-                                <span id="substract">-</span>
-                                <span id="number">1</span>
-                                <span id="add">+</span>
-                            </div>
-                            <span class="items-list-price">7.50</span>
-                        </div>
-                    </li>
-                    <li class="border-line">
-                        <div class="items-list-name">Chicken Wing Dinner</div>
-                        <div class="small-font">
-                            <span class="items-list-size">Sm</span>
-                            <div class="items-list-quantity">
-                                <span id="substract">-</span>
-                                <span id="number">2</span>
-                                <span id="add">+</span>
-                            </div>
-                            <span class="items-list-price">$18.00</span>
-                        </div>
-                    </li>
+                    </li>-->
+             
                     
                     
                 </ul>
             </div>
-            <div class="checkout-box">
+            <div id="checkout-box">
                 <div class="price-count">
-                    <span id="price-count">$13.00</span>
+                    <span id="total">$0</span>
                 </div>
                 <form method=post action="checkout.php">
                     <input class="go-pay" type="submit" value="Checkout"/>

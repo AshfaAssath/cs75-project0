@@ -13,7 +13,7 @@
                         </size>
                     </sizes>
                 </item>
-                <item name="Onions">
+                <item name="Onions" id="2">
                     <sizes>
                         <size size="small">
                             <price>6.85</price>
@@ -106,7 +106,7 @@
         
         <category name="Spcial Dinners">
             <items>
-                <item name="Chicken Wing Dinner">
+                <item name="Chicken Wing Dinner" id="5">
                     <price>7.25</price>
                 </item>
                 <item name="Gyro Plate">
