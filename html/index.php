@@ -30,6 +30,7 @@
                 list-style-type:none;
                 padding:0;
                 margin:0;
+                width:280px;
             }
             li{
 /*                display:none;*/
@@ -190,6 +191,7 @@
                 display:inline-block;
             }
             .substract,.add{
+                float:left;
                 display:inline-block;
                 text-align:center;
                 width:13px;
@@ -201,6 +203,9 @@
 
             }
             .item-cart-num{
+                height:13px;
+                line-height:13px;
+                float:left;
                 display:inline-block;
                 padding:0 5px;
             }
@@ -246,7 +251,7 @@
             }
         </style>
         <script type="text/javascript" >
-        
+            
             var cart_json = {"food":[]};
             
             var shopCart = new function(){
@@ -259,7 +264,13 @@
                         for(var i=0;i<cart_json.food.length;i++)
                         {
                             if(cart_json.food[i].id==o.id){
-                                if(o.size && cart_json.food[i].size==o.size){
+                                if(o.size){
+                                    if(cart_json.food[i].size==o.size){
+                                    cart_json.food[i].num=(parseInt(cart_json.food[i].num)+1).toString();
+                                    json_exit = true;
+                                    }
+                                }
+                                else{
                                     cart_json.food[i].num=(parseInt(cart_json.food[i].num)+1).toString();
                                     json_exit = true;
                                 }
@@ -337,14 +348,28 @@
                         for(var i=0;i<cart_json.food.length;i++)
                         {
                             if(cart_json.food[i].id==o.id){
-                                if(o.size && cart_json.food[i].size==o.size){
-                                    if((parseInt(cart_json.food[i].num)-1)==0){
-                                        cart_json.food.splice(i,1);
+                                
+                                if(cart_json.food[i].id==o.id){
+                                    if(o.size){
+                                        if(cart_json.food[i].size==o.size){
+                                            if((parseInt(cart_json.food[i].num)-1)==0){
+                                                cart_json.food.splice(i,1);
+                                            }
+                                            else{
+                                            cart_json.food[i].num=(parseInt(cart_json.food[i].num)-1).toString();
+                                            }
+                                        }
                                     }
                                     else{
-                                    cart_json.food[i].num=(parseInt(cart_json.food[i].num)-1).toString();
+                                        if((parseInt(cart_json.food[i].num)-1)==0){
+                                            cart_json.food.splice(i,1);
+                                        }
+                                        else{
+                                        cart_json.food[i].num=(parseInt(cart_json.food[i].num)-1).toString();
+                                        }
                                     }
                                 }
+                             
                             }
                         }
                         var cart_value_str = JSON.stringify(cart_json);
@@ -390,6 +415,47 @@
                         
                     }
             }
+            
+            function getCookie(c_name)
+            {
+                if (document.cookie.length>0)
+                {
+                    c_start=document.cookie.indexOf(c_name + "=");
+                    if (c_start!=-1)
+                    { 
+                        c_start=c_start + c_name.length+1 ;
+                        c_end=document.cookie.indexOf(";",c_start);
+                        if (c_end==-1)
+                        {
+                            c_end=document.cookie.length;
+                        }
+                        return unescape(document.cookie.substring(c_start,c_end));
+                    } 
+                  }
+                return "";
+            }
+           
+            //cookie cart
+            function cookieItems() 
+            { 
+                var cookie_str = getCookie("food");
+                var cookie = JSON.parse(cookie_str);
+                for (var i=0;i<cookie.length;i++)
+                {
+                    var j = cookie[i].num;
+                    for (var k=0; k<j; k++)
+                    {
+                        var cookie_item_name = cookie[i].name[0].replace(/\+/g," ");
+                        if(cookie[i].size!=undefined)
+                        var cookie_item ={ id:cookie[i].id["0"], item:cookie_item_name, size:cookie[i].size["0"], price:cookie[i].price["0"] };
+                        else var cookie_item ={ id:cookie[i].id["0"], item:cookie_item_name, price:cookie[i].price["0"] };
+                        shopCart.add(cookie_item);
+                    }
+                }
+               
+            }
+        
+     
         </script>
     </head>
     
@@ -499,32 +565,21 @@
         <div id="shopping-cart">
             <div>
                 <ul class="top-line" id="cart-items-list">
-                   <!-- <li class="cart-item" id="id_cart_item_1">
-                        <div class="items-list-name">3 Piece Chicken Dinner</div>
-                        <div class="small-font">
-                            <span class="items-list-size" id="id-cart-size-1">Sm</span>
-                            <div class="items-list-quantity">
-                                <span class="substract">-</span>
-                                <span class="item-cart-num" id="id_cart_num_1">2</span>
-                                <span class="add" onClick="shopCart.add()">+</span>
-                            </div>
-                            <span class="items-list-price" id="id-cart-price-1">$10.00</span>
-                        </div>
-                    </li>-->
-             
-                    
-                    
+ 
                 </ul>
             </div>
             <div id="checkout-box">
                 <div class="price-count">
                     <span id="total">$0</span>
                 </div>
-                <form method=post action="checkout.php">
+                <form method="post" action="checkout.php">
                     <input class="go-pay" type="submit" value="Checkout"/>
-                    <input id="items-list-checkout" type="hidden" name="items-list-checkout" value="ee"/>
+                    <input id="items-list-checkout" type="hidden" name="items-list" value="ee"/>
                 </form>
             </div>
         </div>
+        <script type="text/javascript">
+            cookieItems();
+        </script>
     </body>
 </html>

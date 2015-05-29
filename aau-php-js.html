@@ -1,0 +1,633 @@
+<!--http://bbs.aau.cn/doc/aau-php-js.html-->
+<!doctype html>
+<html>
+	<head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+    <title>AAuto,PHP,Javascript�﷨�Ƚ�</title>
+    <style type="text/css"> 
+        *{margin:0;padding:0;word-wrap:break-word; font-size:9pt;}
+		table{empty-cells:show;border-collapse:collapse;}table td{padding:4px;border:1px solid #CDCDCD;}.litype_1 li,ol li{list-style-type:decimal;}li{list-style-type:disc;margin-left:2em;} 
+    </style> 
+</head>
+<body>
+
+<div align="left">
+        <br />
+    </div>
+    <table class="t_table" style="BACKGROUND-COLOR: white">
+        <tr>
+            <td valign="top" width="24">
+                ��Ŀ</td>
+            <td valign="top" width="698" class="style1">
+                AAuto</td>
+            <td valign="top" width="376" class="style2">
+                PHP</td>
+            <td valign="top" width="353">
+                Javascript</td>
+        </tr>
+        <tr>
+            <td valign="top" >
+                ����</td>
+            <td valign="top" class="style1">
+                <p>AAuto��Ҫ����<b>�����������ٿ�������</b>�����ݶ�̬���͡���̬���Ϳ����Ļ����ͱ������ԣ�AAuto������������KB�Ķ���EXE,�������κ��ⲿ���п�.</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p></td>
+            <td valign="top" class="style2">
+                PHP ��һ�ִ�����̬������վ����ǿ������<b>�������˽ű�����</b>���������� Apache (web ������) һ��ʹ�á�PHP �﷨�ǳ������� Perl 
+                �� C��<br />
+                <br />
+                ��Windows�Ͽ���ʹ�� WAMPServer ���Զ���װ���߷����Ĵ������л������Ƽ򿪷����� Zend Studio,phpDesinger7,Edit 
+                Plus,Notepad++</td>
+            <td valign="top" >
+                <p>JavaScript ���������������е�<b>�ͻ��˽ű�����</b>�����ҿ���������Ҫ�������������У��ȷ�˵ Internet Explorer�� 
+                Mozilla��Firefox��Netscape���� Opera��JavaScript �������Ľ����ơ���֤���������������󡢴���cookies��</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p></td>
+        </tr>
+        <tr>
+            <td valign="top" >
+                ʵ�ַ�ʽ</td>
+            <td valign="top" class="style1">
+                <p>AAutoԴ���ļ��洢Ϊ *.aau ��ʽ���ı��ļ�,Ҳ���Ա����ɶ����Ƶ� *.aau 
+                �ļ�,aau�ļ�����ʹ��AAuto��д��EXE��������,Ҳ�����ڿ��������ɶ�����EXE�ļ�</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p></td>
+            <td valign="top" class="style2">
+                PHP �Ľű�����<b> &lt;?php ��ʼ���� ?&gt;</b> �����������԰� PHP �Ľű����������ĵ��е��κ�λ�á� ��Ȼ����֧�ּ�д�ķ������ϣ�������ʹ�� 
+                &lt;? �� ?&gt; ����ʼ�ͽ����ű��顣����&lt;?php /PHP Document&hellip;&hellip; ?&gt;</td>
+            <td valign="top" >
+                HTML �� &lt;script&gt; ��ǩ���ڰ� JavaScript ���� HTML ҳ�浱�С� ����&lt;script 
+                language=&quot;javascript&quot;&gt;// JavaScript Document &hellip;&hellip; &lt;/script&gt;</td>
+        </tr>
+        <tr>
+            <td valign="top" >
+                ע��</td>
+            <td valign="top" class="style1">
+                ���е�ע���� // ��ʼ ����ע���� /* ��ͷ���� */ ��β�� 
+                ��AAuto�ж���ע�͵���β�Ǻ���Ŀ�����ж���,������β��Ŀ����ƥ��,ʹ�ô�����,ֻҪ�Ǻ���Ŀ��һ��,�Ϳ�����ע���а�����������ע�� 
+                ��AAuto��ע������Ҳ�������ڸ�ֵ������Ϊ�ַ���ʹ��.����: var str = /*ʹ�ö���ע����Ϊ�ַ����������Ǳ�����Ϊ&#39;\r\n&#39;,Ҳ���ǻس�����*/</td>
+            <td valign="top" class="style2">
+                <p>���е�ע���� // ��ʼ ����ע���� /* ��ͷ���� */ ��β��</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p></td>
+            <td valign="top" >
+                <p>��PHP��ͬ</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p></td>
+        </tr>
+        <tr>
+            <td valign="top" >
+                ����</td>
+            <td valign="top" class="style1">
+                <p>�������Բ�����ֱ��ʹ��,
+                ʹ�ø�ֵ������ʼ������������Ĭ��Ϊ��ǰ���ֿռ���Ա������</p>
+<p>&nbsp;</p>
+                <p>������Ϊ����:<br>
+                </p>
+                <p>1��ȫ�ֱ���</p>
+                <p>2����ǰ���ֿռ�������Ҳ��������ȫ�ֱ�����</p>
+                <p>3���ֲ�����</p>
+                <p>&nbsp;</p>
+                <p>AAuto�ı�����Ҳ����ʹ��$����,</p>
+                <p>��$�Ǳ�������һ����</p>
+                <p>&nbsp;</p>
+              <p>&nbsp; </p>
+                <p><strong>�ֲ�����������var���䶨��</strong><br>
+                  ����var sqlstr; <b><br>
+                  <br>
+                  ����ʹ��var��<br>
+                  ���˱�������Ϊ��ǰ���ֿռ���Ա������</b> 
+                  <br>
+                ����color=&#39;#111&#39;; </p>
+                <p>&nbsp;</p>
+                <p>ʹ��self�ɱ�ʾ��ǰ���ֿռ�,�����������ȼ���self.color = &#39;#111&#39; </p>
+                <p>&nbsp;</p>
+                <p>��ǰ����������,����������Ϊȫ�ֱ���,</p>
+                <p>�� 
+                  ..color = &quot;#111&quot;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p></td>
+            <td valign="top" class="style2">
+                <p>�������Բ�����ֱ��ʹ��,ʹ�ø�ֵ������ʼ�������������ڲ�����Ĭ��Ϊ�ֲ�������</p>
+<p>&nbsp;</p>
+                <p>������Ϊ����:<br>
+                </p>
+                <p>1��ȫ�ֱ���</p>
+              <p>2���ֲ�����</p>
+                <p>&nbsp;</p>
+                <p><b>PHP �е����б��������� $ ���ſ�ʼ��</b> $���Ǳ���������ǰ׺,�����Ǳ������Ƶ�һ����</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>��PHP�к����ڲ�����Ĭ��Ϊ�ֲ�����(����AAuto,Javascript�����෴),ʹ�� global ��������������ȫ�ֱ���.</p>
+            <p>&nbsp;</p>
+            <p>��:
+            </p>
+                <p>&nbsp;</p>
+                <p><font color="#008000">//��global�ؼ��ֶ���ȫ�ֱ���</font></p>
+                <p style="font-family: ������">
+                    <font color="#0000ff">global</font><font color="#000000">&nbsp;$g;&nbsp;</font><font 
+                        color="#008000"><br />
+                    </font>
+                </p>
+                <p><BR>
+            </p>
+                <p>&nbsp;</p></td>
+            <td valign="top" >
+                <p>�������Բ�����ֱ��ʹ��,ʹ�ø�ֵ������ʼ��������</p>
+                <p>����Ĭ��Ϊȫ�ֱ�����</p>
+                <p>&nbsp;</p>
+                <p>������Ϊ����:<br>
+                </p>
+              <p>1��ȫ�ֱ���</p> 
+                <p>2���ֲ�����</p>
+              <p>&nbsp;</p>
+                <p>Javascript�ı�����Ҳ����ʹ��$����,��$�Ǳ�������һ����,������jQuery��$����jQuery�ı���.</p>
+                <p>&nbsp;</p>
+                <p><strong>�ֲ�����������var���䶨��</strong></p>
+                <p> ����var sqlstr; </p>
+                <p>&nbsp;</p>
+                <p><b>����ʹ��var�����˱�������Ϊȫ�ֱ�����</b></p>
+                <p> ����color=&#39;#111&#39;;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p></td>
+        </tr>
+        <tr>
+            <td valign="top" >
+                ȫ�ֱ�</td>
+            <td valign="top" class="style1">
+                <p style="font-family: ������">
+                    <font color="#0000ff">global ����</font></p>
+            </td>
+            <td valign="top" class="style2">
+                <p style="font-family: ������">
+                    $GLOBALS ����</p>
+            </td>
+            <td valign="top" >window ����</td>
+        </tr>
+        <tr>
+            <td valign="top" >
+                ���峣��</td>
+            <td valign="top" class="style1">
+                ���������ַ����»��߱�ʾ��Ա����<br />
+                ���������ַ����»��߲���д��ʾȫ�ֳ���<br />
+                ����ǰ������::���η���ʾȫ�ֳ���<br />
+                <br />
+                ����ֵ�����κη�nullֵ�Ժ󼴲����޸�Ϊ������ͬ��ֵ</td>
+            <td valign="top" class="style2">ʹ�� const��define ���峣��,<br />
+                <br />
+                1��const��������Ա�������壬һ�������Ҳ��ܸı���ֵ��define����ȫ�ֳ��������κεط������Է��ʡ� 
+                <br />
+                2��define���������ж�����const���ԡ� 
+                <br />
+                3��const���������������ж��峣�� 
+                <br />
+                4��const����һ����ͨ�ĳ������ƣ�define���Բ��ñ���ʽ��Ϊ���ơ�<br />
+                5��const��ֵֻ�ܽ��ܾ�̬�ı�������define���Բ����κα���ʽ�� 
+                <br />
+                6��const ���Ǵ�Сд���У�Ȼ��define()����ͨ��������������������Сд�����еĳ�����<br />
+                <br />
+                ��:<br />
+                <br />
+                <code><span class="html"><span class="default">define</span><span 
+                    class="keyword">(</span><span class="string">&#39;��PI&#39;</span><span 
+                    class="keyword">, </span><span class="default">M_PI</span><span 
+                    class="keyword">);&nbsp;
+                <br />
+                const CHARSET = &quot;�й�&quot;;<br />
+                </span></span></code></td>
+            <td valign="top" >��֧�ֶ��峣��( ���泣������ )</td>
+        </tr>
+        <tr>
+            <td valign="top" >
+                ��Ա������</td>
+            <td valign="top" class="style1">
+                ����.��Ա</td>
+            <td valign="top" class="style2">����-&gt;��Ա</td>
+            <td valign="top" >����.��Ա</td>
+        </tr>
+        <tr>
+            <td valign="top" >
+                ������</td>
+            <td valign="top" class="style1">
+                <p style="font-family: ������">
+                    <font color="#008000">//AAuto����:<br />
+                    </font><font color="#000000">
+                    <br />
+                    </font><font color="#0000ff">class</font><font color="#000000">&nbsp;myclass{<br />
+                    <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#008000">//ctor�������Ĺ��캯��<br />
+                    </font><font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000ff">ctor</font><font 
+                        color="#000000">(&nbsp;&nbsp;){&nbsp;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#008000">/*<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;���캯���п�����<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var���䶨�������������ڲ���˽�б���.<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/</font><font color="#000000"><br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000ff">var</font><font color="#000000">&nbsp;private&nbsp;=&nbsp;123;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000ff">this</font><font color="#000000">.name&nbsp;=&nbsp;</font><font 
+                        color="#800000">&quot;����&quot;</font><font color="#000000">;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000ff">this</font><font color="#000000">.getName&nbsp;=&nbsp;</font><font 
+                        color="#0000ff">function</font><font color="#000000">(){<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000ff">return</font><font color="#000000">&nbsp;</font><font 
+                        color="#0000ff">this</font><font color="#000000">.name;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000ff">this</font><font color="#000000">.setName&nbsp;=&nbsp;</font><font 
+                        color="#0000ff">function</font><font color="#000000">(name){<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000ff">this</font><font color="#000000">.name&nbsp;=&nbsp;name;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;};<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#008000">//����������������ʵ����Ա�ķ���,<br />
+                    </font><font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#008000">//javascript�ǲ�֧�ֵ�<br />
+                    </font><font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;age&nbsp;=&nbsp;23;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;gohome&nbsp;=&nbsp;</font><font color="#0000ff">function</font><font color="#000000">(){<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;io.print(</font><font color="#800000">&quot;I&#39;m&nbsp;back&quot;</font><font 
+                        color="#000000">)<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;}<br />
+                    &nbsp;<br />
+                    }</font></p>
+                <p style="font-family: ������">
+                    <font color="#000000">
+                    <br />
+                    </font>
+                </p>
+                <p style="font-family: ������">
+                    <font color="#008000">//������ʵ������<br />
+                    </font><font color="#0000ff">var</font><font color="#000000">&nbsp;object&nbsp;=&nbsp;myclass()&nbsp;<br />
+                    </font>
+                </p>
+            </td>
+            <td valign="top" class="style2">
+                <p style="font-family: ������; color: #008000;">//PHP����</p>
+              <p style="font-family: ������">&nbsp;</p>
+                <p style="font-family: ������"><font color="#0000ff">class</font><font color="#000000">&nbsp;Cart{<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#008000">//������Ա����,&nbsp;<br />
+                </font><font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#008000">//PHP��var�ɲ��Ƕ����ֲ���������˼<br />
+                </font><font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000ff">var</font><font 
+                        color="#000000">&nbsp;$items&nbsp;=&nbsp;123;&nbsp;</font><font color="#008000">//&nbsp;���ﳵ�е���Ŀ<br />
+                </font><font color="#000000">
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#008000">//&nbsp;��&nbsp;$num&nbsp;��&nbsp;$artnr&nbsp;���복��&nbsp;<br />
+                </font><font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000ff">function</font><font 
+                        color="#000000">&nbsp;add_item&nbsp;($artnr,&nbsp;$num){<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this-&gt;items[$artnr]&nbsp;+=&nbsp;$num;<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br />
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#008000">//&nbsp;��&nbsp;$num&nbsp;��&nbsp;$artnr&nbsp;�ӳ���ȡ��<br />
+                </font><font color="#000000">
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000ff">function</font><font color="#000000">&nbsp;remove_item&nbsp;($artnr,&nbsp;$num){<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000ff">if</font><font color="#000000">&nbsp;($this-&gt;items[$artnr]&nbsp;&gt;&nbsp;$num)&nbsp;{<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this-&gt;items[$artnr]&nbsp;-=&nbsp;$num;<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000ff">return</font><font color="#000000">&nbsp;</font><font 
+                        color="#0000ff">true</font><font color="#000000">;<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;</font><font color="#0000ff">else</font><font color="#000000">&nbsp;{<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000ff">return</font><font color="#000000">&nbsp;</font><font 
+                        color="#0000ff">false</font><font color="#000000">;<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br />
+                }</font></p>
+                <p style="font-family: ������"><font color="#000000"><br />
+                </font>
+                </p>
+                <p style="font-family: ������">
+                    <font color="#008000">//����������ʵ��</font><br />
+                    $a&nbsp;=&nbsp;new&nbsp;Cart;<br />
+                    echo $a-&gt;items;<font color="#008000">//ע������itemsǰ�治���ټ�$����</font></p>
+            </td>
+            <td valign="top" >
+                <p style="font-family: ������">
+                    <font color="#008000">//Javascript����<br />
+                    </font><font color="#000000">
+                    <br />
+                    </font><font color="#0000ff">function</font><font color="#000000">&nbsp;myclass(){<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000ff">this</font><font color="#000000">.name&nbsp;=&nbsp;</font><font 
+                        color="#800000">&quot;����&quot;</font><font color="#000000">;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000ff">this</font><font color="#000000">.getName&nbsp;=&nbsp;</font><font 
+                        color="#0000ff">function</font><font color="#000000">(){<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000ff">return</font><font color="#000000">&nbsp;</font><font 
+                        color="#0000ff">this</font><font color="#000000">.name;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;}<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000ff">this</font><font color="#000000">.setName&nbsp;=&nbsp;</font><font 
+                        color="#0000ff">function</font><font color="#000000">(name){<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000ff">this</font><font color="#000000">.name&nbsp;=&nbsp;name;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;}<br />
+                    }</font></p>
+                <br />
+&nbsp;&nbsp;
+                <br />
+                <p>
+                    JS��new�ؼ�������������ʵ�� 
+                </p>
+                <p>&nbsp;
+                    </p>
+                <div>obj = new ��������������
+obj = new ������(��������)
+</div>
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" >
+                ����</td>
+            <td valign="top" class="style1">
+                io.print(&quot;hello world&quot;);<br />
+                β���ķֺſ���ʡ��,�������õ�Բ���Ų���ʡ��</td>
+            <td valign="top" class="style2">&lt;?php echo &quot;Hello World&quot;; ?&gt;<br />
+β���ķֺŲ���ʡ��,�������õ����ſ���ʡ��.</td>
+            <td valign="top" ><span class="style2">document.write(&quot;Hello world&quot;);<br />
+β���ķֺſ���ʡ��,�������õ�Բ���Ų���ʡ��</span></td>
+        </tr>
+        <tr>
+            <td valign="top" >
+                ���鶨��</td>
+            <td valign="top" class="style1">
+                <p>����������</p>
+                <p>&nbsp;</p>
+              <ul class="litype_1" type="1">
+                  <li><b>��ֵ����</b> �������� ID ��������<br />
+                    var names ={&quot;Peter&quot;;&quot;Quagmire&quot;;&quot;Joe&quot;};<br />
+                    <br />
+                    //����ָ����������<br />
+array = table.array( 10 )<br />
+<br />
+//������ά����<br />
+array = table.array(3,5,{} )<br />
+                    <br />
+                </li>
+                  <li><b>�������� </b>�����е�ÿ�� ���ֹ���һ��ֵ<br />
+                    ages 
+= { Peter = 32 ; Quagmire = 30;Joe=34 };</li>
+                </ul>
+              <p><br />
+                  ������ԱҲ������,���ɶ�ά���顣</p>
+                <p>&nbsp;</p>
+                <p>��AAuto��ֻ��һ�����ݽṹ,����(table),�����԰���˳������,Ҳ���԰���ϡ�����飬����������<br />
+                <br />
+              </p>
+              <p><strong>AAutoʹ�÷ֺŷָ���Ա,��ʹ�õȺŷָ���ֵ��</strong> .</p></td>
+            <td valign="top" class="style2">
+                �������������ͣ� 
+                <ul class="litype_1" type="1">
+                    <br />
+                    <li><b>��ֵ����</b> �������� ID ��������<br />
+$names = array(&quot;Peter&quot;,&quot;Joe&quot;);<br />
+                      <br />
+                    </li>
+                    <li><b>�������� </b>�����е�ÿ�� ID ������һ��ֵ<br />
+                      $ages = array( &quot;Peter&quot;=&gt;32, &quot;Quagmire&quot;=&gt;30, 
+                        &quot;Joe&quot;=&gt;34);<br />
+                        <br />
+                        <br />
+                    </li>
+                </ul>
+                ������ԱҲ������,���ɶ�ά���顣<br />
+              <br />
+                <strong>PHPʹ�ö��ŷָ���Ա,��ʹ��=&gt; �ָ���ֵ��</strong></td>
+            <td valign="top" ><p><b>����������</b></p>
+              <p>&nbsp;</p>
+              <ul class="litype_1" type="1">
+                <li><b>��ֵ����</b> �������� ID ��������<br />
+                  var names = [&quot;Peter&quot;, &quot;Quagmire&quot;, &quot;Joe&quot;];<br />
+                  <br />
+                  Ҳ��������д<br />
+                  var names = new Array(&quot;Peter&quot;,&quot;Quagmire&quot;,&quot;Joe&quot;);                  <br />
+                  <br />
+                  <br />
+                </li>
+                <li><b>�������� </b>�����е�ÿ������ֵ����һ��ֵ<br />
+                  var ages = [];<br />
+                  ages[&quot;peter&quot;] = 32;<br />
+                  ages[&quot;Quagmire&quot;] = 30;<br />
+                  <br />
+                </li>
+              </ul>
+              <p>&nbsp;</p>
+                <p>������ԱҲ������,���ɶ�ά���顣</p>
+                <p>&nbsp;</p>
+                <p>��javascript������ʹ�ô����Ŷ�������,<br />
+              ��������AAuto�е�table(��),Ҳ���ڴ������ж���: </p>
+              <p>&nbsp;</p>
+              <p>����һ��Javascript ������<br />
+                var user = {&quot;name&quot;:&quot;zhangs&quot;, &quot;age&quot;:28};<br />
+                <br />
+                Ҳ����д�ɣ�<br />
+                var name =&nbsp;   &quot;zhangs&quot;, user = {name:name, age:28};<br />
+              </p>
+              <p><br />
+                  <strong>avascriptʹ�ö��ŷָ���Ա,��ʹ��ð�ŷָ���ֵ��</strong>��<br />
+            </p></td>
+        </tr>
+        <tr>
+            <td valign="top" >
+                ����Ԫ������</td>
+            <td valign="top" class="style1">
+                ȡ����ʹ�� #������<br />
+                <br />
+                array = table.array( 10 )<br />
+                ���鳤�� = #array;<br />
+                <br />
+                ʹ�� table.range(array ) ���ɷ�����������С,��������.</td>
+            <td valign="top" class="style2">
+                <b>count() �������������еĵ�Ԫ��Ŀ�������е����Ը�����</b> �������飬������Ԫ�صĸ�������������ֵ������ 
+                1�����������Ǳ���������û�ж��壬�򷵻� 0������ mode ������Ϊ COUNT_RECURSIVE���� 
+                1���������ݹ��׼�����ά�����е�������Ԫ�ظ������﷨��<br />
+                count(array,mode)
+            </td>
+            <td valign="top" >
+                <b>length ���Կ����û򷵻�������Ԫ�ص���Ŀ��</b><br /> 
+                ������ length �������Ǳ������ж���������һ��Ԫ�ص��±��� 
+                1��������Щ��������Ԫ�أ�������Ԫ�� 0 ��ʼ�ĳ����������ԣ����� length �����������е�Ԫ�صĸ������﷨��arrayObject.length</td>
+        </tr>
+        <tr>
+          <td valign="top" >����<br>
+          β��׷�ӳ�Ա</td>
+          <td valign="top" class="style1">array = {}<br>
+          <br>
+          table.push( array,&quot;׷�ӳ�Ա&quot; ) //�������鳤��</td>
+          <td valign="top" class="style2"><p>$names = array(&quot;Peter&quot;,&quot;Joe&quot;);</p>
+            <p>names[] = &quot;Quagmire&quot;;</p> <br>
+            //Ҳ��������д<br>
+            array_push($names, "apple", "apple2");<BR></td>
+          <td valign="top" ><p>var a = [1,2,3,4,5];&nbsp;</p>
+          <p>var b = a.push(6,7); //a��[1,2,3,4,5,6,7] b��7</p></td>
+        </tr>
+        <tr>
+          <td valign="top" >����β��������Ա</td>
+          <td valign="top" class="style1"><p>table.pop( ��������,��������) </p>
+          <p>&nbsp;</p>
+          <p>����ɾ��������������ָ������Ԫ��,��������Ϊ������ʾ����Ԫ�ط������С�</p>
+          <p>&nbsp;</p>
+          <p>����ʡ�Եڶ�������������PHP��Javascript�÷�һ��,��������һ��Ԫ�ء�</p></td>
+          <td valign="top" class="style2"><p>arrayObject.pop()</p>
+          <p>&nbsp;</p>
+          <p>����ɾ������������������һ��Ԫ��</p></td>
+          <td valign="top" ><p><strong>array_pop(��������)</strong> </p>
+          <p>&nbsp;</p>
+          <p>���򲢷��� <em>array</em> ����������һ����Ա</p></td>
+        </tr>
+        <tr>
+          <td valign="top" >��ȡ����</td>
+          <td valign="top" class="style1"><p>table.slice( ��������,��ʼλ��,����λ��)</p>
+          <p>&nbsp;</p>
+          <p>���ؽ�ȡ����</p></td>
+          <td valign="top" class="style2"><p><strong>array_slice</strong> ( ��������, ��ʼλ��,����)</p>
+            <p>&nbsp;</p>
+            <p>���ؽ�ȡ����,ע���ڶ���������ָ������,�����ǽ���λ��<BR>
+          </p></td>
+          <td valign="top" ><p>��������.slice(<span class="style1">��ʼλ��,����λ��</span>)</p>
+          <p>&nbsp;</p>
+          <p>���ؽ�ȡ����</p></td>
+        </tr>
+        <tr>
+            <td valign="top" >
+                ���庯��</td>
+            <td valign="top" class="style1"><font color="#0000ff">function</font><font color="#000000"> ������(����){<br />
+                <br />
+                &nbsp; &nbsp; </font><font color="#0000ff">return</font><font color="#000000"> ����ֵ,����ֵ2<br />
+                }<br />
+                </font>AAuto�������Է��ض���ֵ</td>
+            <td valign="top" class="style2"><font color="#0000ff">function</font><font color="#000000"> ������(����){<br />
+                <br />
+                &nbsp; &nbsp; </font><font color="#0000ff">return</font><font color="#000000"> ����ֵ<br />
+                }<br />
+                </font>
+            </td>
+            <td valign="top" >
+                <font color="#0000ff">function</font><font color="#000000"> ������(����){<br />
+                <br />
+                &nbsp; &nbsp; </font><font color="#0000ff">return</font><font color="#000000"> ����ֵ<br />
+                }<br />
+                </font>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" >
+                �����ַ���</td>
+            <td valign="top" class="style1">
+                �ַ������Է��뵥���Ż�˫����, ��˫�����в�֧��ת����,�ڵ������п�ʹ��ת����.��:<br />
+                <br />
+                str = &quot;abcd&quot;<br />
+                str = &#39;abcd\t&#39;<br />
+                <br />
+                AAuto���ַ�������ֱ�ӻ���,˫���Ž����н���Ϊ&#39;\n&#39;,�������ź������л���</td>
+            <td valign="top" class="style2">�ַ������Է��뵥���Ż�˫����<br />
+              $str = &quot;abcd\t&quot;<br />
+              $str = &#39;abcd&#39; <p>&nbsp;</p>
+                <p>˫������֧��ת�������������Ų�֧�֣���AAuto�����෴.��Ҳ��ζ�ţ��������ٶȱ�˫���Ž����ַ������ٶȸ���</p></td>
+            <td valign="top" >
+              <p><span class="style2">�ַ������Է��뵥���Ż�˫����,��֧��ת����<br />
+var str = &quot;abcd\t&quot;<br />
+var str = &#39;abcd\t&#39;</span></p>
+          <DIV></DIV></td>
+        </tr>
+        <tr>
+            <td valign="top" >
+                �ַ�������</td>
+            <td valign="top" class="style1">
+                ʹ�������Ӻ�����<br />
+                var str = &quot;�ַ���&quot; ++&nbsp;&nbsp;&quot;�ַ���&quot;<br />
+                <br />
+                �����ַ���������ʱҲ����ʡ��Ϊһ���Ӻ�,��:<br />
+                var str = &quot;�ַ���&quot; + &quot;�ַ���&quot;</td>
+            <td valign="top" class="style2">
+                ʹ��һ��Բ������<br />
+                $str = &quot;�ַ���&quot;.&quot;�ַ���&quot;</td>
+            <td valign="top" >
+                ʹ�üӺ�����<br />
+                var str = &quot;�ַ���&quot; + &quot;�ַ���&quot;</td>
+        </tr>
+        <tr>
+            <td valign="top" >
+                �ַ����ָ�</td>
+            <td valign="top" class="style1">
+                <br>
+                �÷�ʾ����<br>
+                <br />
+                <font color="#0000ff">var</font><font color="#000000"> ���� = string.split(</font><font 
+                    color="#800000">&quot;a,b,c,d&quot;</font><font color="#000000">,</font><font 
+                    color="#800000">&quot;,&quot;</font><font color="#000000">)</font></td>
+            <td valign="top" class="style2">
+                <p><b><EM>explode</EM>&ndash; ���ַ����ָ������ </b><br>
+                <br>
+                ˵����</p>
+                <p>array <EM>explode</EM> ( string pattern, string string 
+                [, int limit])<br>
+                <br>
+                <br>
+                ע: php��Ҳ��split����,��ʹ����������ʽ�ָ�,�����÷�һ��,explode()�����ٶȸ���һЩ</p></td>
+            <td valign="top" >
+                <p><b>split() �������ڰ�һ���ַ����ָ����ַ������顣</b> <br>
+                <br>
+              �﷨��</p>
+              <p>stringObject.split(separator,howmany)</p></td>
+        </tr>
+        <tr>
+            <td valign="top" >
+                ���ز����ַ���</td>
+            <td valign="top" class="style1">
+                <p><br />
+                �÷�ʾ����</p>
+                <p>&nbsp;</p>
+                <p><font color="#0000ff">var</font><font color="#000000"> str = string.sub(</font><font 
+                    color="#800000">&quot;12345&quot;</font><font color="#000000">,2,5)</font></p></td>
+            <td valign="top" class="style2">
+                <p><b>substr() ���������ַ�����һ���֡�</b> </p>
+                <p>&nbsp;</p>
+                <p>�﷨��</p>
+                <p>&nbsp;</p>
+                <p>substr(string,start,length)</p></td>
+            <td valign="top" >
+                <p><b>substr() ���������ַ����г�ȡ</b></p>
+                <p><b>�� start �±꿪ʼ��ָ����Ŀ���ַ���</b> </p>
+                <p>&nbsp;</p>
+                <p>�﷨��                </p>
+                <p>stringObject.substr(start,length)</p></td>
+        </tr>
+        <tr>
+          <td valign="top" >ģʽƥ��</td>
+          <td valign="top" class="style1">AAutoʹ��һ�ֿ���������ģʽƥ���﷨,�����﷨����������������ʽ,�����ٶȸ���,ʹ�ø�����,��������AAuto����Ĭ��֧��<br />
+          <br />
+          ����ͨ����׼�� string.regex Ҳ����֧����������ʽ.</td>
+          <td valign="top" class="style2">֧����������ʽ</td>
+          <td valign="top" ><span class="style2">֧����������ʽ</span></td>
+        </tr>
+        <tr>
+            <td valign="top" >
+                ��ѧ����</td>
+            <td valign="top" class="style1">
+                ������ѧ��������math���ֿռ�<br />
+                <br />
+                <br />
+                io.open() //��ȡ��<br />
+                io.print( math.floor(5.1) )</td>
+            <td valign="top" class="style2">
+                <b>floor() ������������Ϊ���ӽ���������</b> �﷨�� floor(x)���ز����� <i>x</i> ����һ���������� <i>x</i> 
+                ��С��������ȥȡ����floor() ���ص�������Ȼ�� float����Ϊ float ֵ�ķ�Χͨ���� integer Ҫ����ʵ����&lt;?php 
+                echo(floor(5.1)); ?&gt;</td>
+            <td valign="top" >
+                <b>floor() �����ɶ�һ�������������롣</b> �﷨�� Math.floor(x)floor() 
+                ����ִ�е�������ȡ�����㣬�����ص���С�ڻ����ں���������������֮���ӽ���������ʵ����&lt;script type=&quot;text/javascript&quot;&gt; 
+                document.write(Math.floor(5.1) + &quot;&lt;br /&gt;&quot;) &lt;/script&gt;</td>
+        </tr>
+        <tr>
+            <td valign="top" >
+                ��ѧ����</td>
+            <td valign="top" class="style1">
+                �﷨��math.round(x,prec)���ؽ� <i>x</i> ����ָ������ <i>prec</i> 
+                ��ʮ����С���������ֵ���Ŀ���������������Ľ�����prec Ҳ�����Ǹ������㣨Ĭ��ֵ����</td>
+            <td valign="top" class="style2">
+                <b>round() �����Ը����������������롣</b> �﷨��round(x,prec)���ؽ� <i>x</i> ����ָ������ <i>prec</i> 
+                ��ʮ����С���������ֵ���Ŀ���������������Ľ�����prec Ҳ�����Ǹ������㣨Ĭ��ֵ����ʵ����&lt;?phpecho(round(0.49)); ?&gt;</td>
+            <td valign="top" >
+                <b>round() �����ɰ�һ����������Ϊ���ӽ���������</b> �﷨��Math.round(x)�� x ���ӽ���������ʵ����&lt;script 
+                type=&quot;text/javascript&quot;&gt;document.write(Math.round(0.49) + &quot;&lt;br /&gt;&quot;) &lt;/script&gt;</td>
+        </tr>
+    </table>
+    <br />
+
+</body>
+</html>
